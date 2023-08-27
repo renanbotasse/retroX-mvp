@@ -1,0 +1,122 @@
+[
+	{
+		"id": 0,
+		"productName": "Biker Mice from Mars",
+		"image1": "https://www.dominioinf.com.br/sites/online/1320/000003-3g.jpg?t=96",
+		"image2": "https://www.dominioinf.com.br/sites/online/1320/000003-1g.jpg?t=96",
+		"image3": "https://www.dominioinf.com.br/sites/online/1320/000003-g.jpg?t=96",
+		"platform": "SNES",
+		"genre": "Corrida",
+		"year": "1994",
+		"price": "130.00",
+		"description": "O jogador assume o papel de um dos seis pilotos: Throttle, Modo, Vinnie, Lawrence Limburger, Dr. Karbunkle ou Grease Pit, em uma série de corridas de moto, em diferentes pistas que são exibidas em projeção isométrica . Após cada volta, o pacote de mísseis do jogador é recarregado e usado para derrubar os oponentes. Além disso, o jogador tem uma escolha de bônus aleatória para dinheiro adicional, invulnerabilidade, aceleração de óxido nitroso ou um terremoto pesado. O vencedor recebe o prêmio em dinheiro e os perdedores devem começar de novo."
+	},
+	{
+		"id": 1,
+		"productName": "Sunset Riders",
+		"image1": "https://www.dominioinf.com.br/sites/online/1320/000073-3g.jpg?t=93",
+		"image2": "https://www.dominioinf.com.br/sites/online/1320/000073-1g.jpg?t=96",
+		"image3": "https://www.dominioinf.com.br/sites/online/1320/000073-g.jpg?t=96",
+		"platform": "SNES",
+		"genre": "Plataforma",
+		"year": "1993",
+		"price": "130.00",
+		"description": "Sunset Riders é um jogo de faroeste em que quatro caçadores de recompensas percorrem o Velho Oeste dos Estados Unidos em busca dos mais terríveis foras-da-lei. No começo de cada fase, é mostrado ao jogador um cartaz com o nome do bandido a ser eliminado, o valor da recompensa e a famosa frase: “Procurado vivo ou morto ” Wanted dead or alive ” em inglês). O jogo possui oito fases. Conforme o jogador vai avançando, as fases vão se tornando mais difíceis e as recompensas maiores."
+	},
+	{
+		"id": 2,
+		"productName": "Clock Tower",
+		"image1": "https://www.dominioinf.com.br/sites/online/1320/000618-3g.jpg?t=19",
+		"image2": "https://www.dominioinf.com.br/sites/online/1320/000618-1g.jpg?t=96",
+		"image3": "https://www.dominioinf.com.br/sites/online/1320/000618-g.jpg?t=96",
+		"platform": "SNES",
+		"genre": "Terror",
+		"year": "1995",
+		"price": "130.00",
+		"description": "Clock Tower para o Super Nintendo é um jogo de terror psicológico que coloca os jogadores no papel de Jennifer Simpson, uma jovem órfã que se encontra presa em uma mansão sinistra e abandonada, conhecida como a Mansão do Relógio. Jennifer deve explorar os corredores sombrios, resolver quebra-cabeças desafiadores e evitar um perseguidor implacável chamado Scissorman, um assassino mascarado com tesouras afiadas."
+	},
+	{
+		"id": 3,
+		"productName": "Donkey Kong Country",
+		"image1": "https://www.dominioinf.com.br/sites/online/1320/000142-3g.jpg?t=193",
+		"image2": "https://www.dominioinf.com.br/sites/online/1320/000142-1g.jpg?t=96",
+		"image3": "https://www.dominioinf.com.br/sites/online/1320/000142-g.jpg?t=96",
+		"platform": "SNES",
+		"genre": "Plataforma",
+		"year": "1994",
+		"price": "130.00",
+		"description": "Donkey Kong Country é um jogo de plataforma em 2D desenvolvido pela Rare e publicado pela Nintendo para o Super Nintendo Entertainment System (SNES). Estrelando o personagem Donkey Kong, o jogo se passa em Donkey Kong Island onde é explorado seis regiões com ambientes diferentes, e o enredo gira em torno de Donkey Kong e seu sobrinho Diddy Kong, que devem recuperar seu tesouro de bananas roubado por King K. Rool e os Kremlings."
+	},
+	{
+		"id": 4,
+		"productName": "Street Fighter II",
+		"image1": "https://www.dominioinf.com.br/sites/online/1320/000952-3g.jpg?t=59",
+		"image2": "https://www.dominioinf.com.br/sites/online/1320/000952-1g.jpg?t=96",
+		"image3": "https://www.dominioinf.com.br/sites/online/1320/000952-g.jpg?t=96",
+		"platform": "SNES",
+		"genre": "Luta",
+		"year": "1991",
+		"price": "130.00",
+		"description": "Street Fighter 2 é um jogo de luta que foi lançado em fevereiro de 1991 e, este mês, está completando 30 anos. Além de ser um dos maiores sucessos da história dos fliperamas, o clássico da Capcom bateu recorde de vendas no Super Nintendo e criou tendências que são seguidas até hoje. Muitos games foram influenciados pelo “pai dos jogos de luta”, que ficou famoso por causa de suas batalhas cheias de combos e golpes especiais."
+	},
+	{
+		"id": 5,
+		"productName": "Final Fight III",
+		"image1": "https://www.dominioinf.com.br/sites/online/1320/000214-3g.jpg?t=71",
+		"image2": "https://www.dominioinf.com.br/sites/online/1320/000214-1g.jpg?t=96",
+		"image3": "https://www.dominioinf.com.br/sites/online/1320/000214-g.jpg?t=96",
+		"platform": "SNES",
+		"genre": "Briga de Rua",
+		"year": "1995",
+		"price": "130.00",
+		"description": "Final Fight 3 é um clássico jogo de luta para o Super Nintendo que se desenrola em Metro City, onde os jogadores escolhem entre personagens como Guy, Mike Haggar, Lucia Morgan e Dean para enfrentar a gangue Skull Cross, liderada por Black. Através de hordas de inimigos e chefes poderosos, os jogadores percorrem cenários urbanos variados em uma missão para salvar a cidade."
+	},
+	{
+		"id": 6,
+		"productName": "Mega Man X",
+		"image1": "https://www.dominioinf.com.br/sites/online/1320/000165-1g.jpg?t=127",
+		"image2": "https://www.dominioinf.com.br/sites/online/1320/000165-1g.jpg?t=96",
+		"image3": "https://www.dominioinf.com.br/sites/online/1320/000165-g.jpg?t=96",
+		"platform": "SNES",
+		"genre": "Plataforma",
+		"year": "1994",
+		"price": "130.00",
+		"description": "A série Mega Man X se passa no ano 21XX, quando o Dr. Cain encontra acidentalmente Mega Man X, um robô com livre arbítrio, em um laboratório antigo do Dr. Thomas Light. Cain começa a criar Reploids com base em X, mas muitos deles se rebelam como Mavericks devido a um vírus implantado por Dr. Wily em Zero. Os Mavericks Hunters são formados para enfrentar essa ameaça, inicialmente liderados por Sigma, que se torna um Maverick poderoso e inteligente, tornando-se o principal inimigo de X na série."
+	},
+	{
+		"id": 7,
+		"productName": "Final Fantasy III",
+		"image1": "https://www.dominioinf.com.br/sites/online/1320/000088-3g.jpg?t=49",
+		"image2": "https://www.dominioinf.com.br/sites/online/1320/000088-1g.jpg?t=96",
+		"image3": "https://www.dominioinf.com.br/sites/online/1320/000088-g.jpg?t=96",
+		"platform": "SNES",
+		"genre": "RPG",
+		"year": "1990",
+		"price": "130.00",
+		"description": "Final Fantasy III é um RPG clássico da Square Enix lançado em 1990, onde quatro jovens heróis embarcam em uma jornada para salvar seu mundo tocando em cristais elementares para adquirir poderes especiais e enfrentar as forças do mal. Com um sistema flexível de classes e um enredo envolvente, o jogo é um marco da série Final Fantasy que introduziu muitos elementos icônicos aos RPGs."
+	},
+	{
+		"id": 8,
+		"productName": "Chrono Trigger",
+		"image1": "https://www.dominioinf.com.br/sites/online/1320/000078-3g.jpg?t=316",
+		"image2": "https://www.dominioinf.com.br/sites/online/1320/000078-1g.jpg?t=96",
+		"image3": "https://www.dominioinf.com.br/sites/online/1320/000078-g.jpg?t=96",
+		"platform": "SNES",
+		"genre": "RPG",
+		"year": "1995",
+		"price": "130.00",
+		"description": "Chrono Trigger é um RPG lendário desenvolvido pela Square Enix (anteriormente Square) e lançado em 1995 para o Super Nintendo. A história gira em torno de Crono, um jovem herói, e seus amigos, que viajam através do tempo para evitar um apocalipse provocado por uma entidade malévola chamada Lavos. Com personagens memoráveis, uma trama envolvente e um inovador sistema de batalha, o jogo é amplamente aclamado por sua narrativa não linear e múltiplos finais, permitindo que as escolhas dos jogadores moldem o destino do mundo. Com gráficos belos, trilha sonora icônica e jogabilidade inovadora, Chrono Trigger é um marco atemporal na história dos RPGs."
+	},
+	{
+		"id": 9,
+		"productName": "The Legend of Zelda: <br/> A Link to the Past",
+		"image1": "https://www.dominioinf.com.br/sites/online/1320/000536-3g.jpg?t=105",
+		"image2": "https://www.dominioinf.com.br/sites/online/1320/000536-1g.jpg?t=96",
+		"image3": "https://www.dominioinf.com.br/sites/online/1320/000536-g.jpg?t=96",
+		"platform": "SNES",
+		"genre": "Aventura",
+		"year": "1991",
+		"price": "130.00",
+		"description": "Em The Legend of Zelda: A Link to the Past, os jogadores embarcam em uma emocionante jornada como Link, um jovem herói, enquanto ele se aventura em um mundo vasto e mágico para resgatar a Princesa Zelda e impedir a ressurreição do maligno Ganon. Com um sistema de alternância entre dois mundos, quebra-cabeças desafiadores e ação envolvente, o jogo é um marco da série e um exemplo de excelência no gênero de ação e aventura."
+	}
+]

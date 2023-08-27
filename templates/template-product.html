@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAC9cFEA/7VmAP///wCr9P8AAwMNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQBAQEBAQEBAQQEAAAABAQEAQEBAQEBAQEEBAQAAAQBBAEBAQEBAQEBBAEAAAAEAQEBAQEEBAQEBAEBAAAEAgEBAQEEAwMDAwMEAQEABAIEAQEEAwMEBAQEAwQEBAICAgQEAAMCAgICAwICBAICAgICBAADAgIEBAMEAgQCAgICBAEAAwICBAQDBAIEAgICAgQBAAADAgICAAACBAICAgIEAQAAAAAAAAQEAAQCAgICAgQAAAAAAAQBAQAEAgICAgIEAAAAAAAEBAQEAgICAgICAgQAAAAEAQEEAgICAgICAgICBAQEAQEEAgICAgICAgICAgICBAQEAgICAgICAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon">
+
+  <title>{%GAMENAME%}</title>
+
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: inherit;
+    }
+
+    html {
+      font-size: 62.5%;
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 5rem 5rem 10rem;
+      line-height: 1.7;
+      font-family: 'Roboto', sans-serif;
+      text-align: justify;
+      color: #555;
+      min-height: 100vh;
+      background: linear-gradient(to right, #02efee, #0001cb);
+    }
+
+
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 6rem;
+      color: white;
+      transform: skewY(-5deg);
+      text-align: center;
+      position: relative;
+      word-spacing: 3px;
+    }
+
+    h1::before {
+      content: '';
+      display: block;
+      height: 65%;
+      width: 49%;
+      position: absolute;
+      top: 105%;
+      left: 50%;
+      opacity: 0.8;
+      z-index: -1;
+      transform: skewY(370deg) translate(-50%, -50%);
+    }
+
+    .container {
+      width: 95rem;
+      margin: 0 auto;
+    }
+
+    .product {
+      width: 60rem;
+      margin: 0 auto;
+      margin-top: 9rem;
+      background: white;
+      box-shadow: 0 3rem 6rem 1rem rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+
+    .product__emoji {
+      font-size: 15rem;
+      position: absolute;
+    }
+
+    .product__emoji--1 {
+      top: -4rem;
+      left: -2rem;
+      z-index: 10;
+    }
+
+    .product__emoji--2 {
+      top: -6rem;
+      left: 9rem;
+    }
+
+    .product__emoji--3 {
+      top: -4rem;
+      right: 15rem;
+    }
+
+    .product__emoji--4 {
+      top: -5rem;
+      right: 2rem;
+      z-index: 10;
+    }
+
+    .product__emoji--5 {
+      bottom: -9rem;
+      left: 18rem;
+    }
+
+    .product__emoji--6 {
+      bottom: -8rem;
+      left: 5rem;
+    }
+
+    .product__emoji--7 {
+      bottom: -12rem;
+      right: 14rem;
+    }
+
+    .product__emoji--8 {
+      bottom: -8rem;
+      right: -2rem;
+    }
+
+    .product__emoji--9 {
+      top: -7rem;
+      left: 19rem;
+    }
+
+    .product__back:link,
+    .product__back:visited {
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: none;
+      z-index: 1000;
+      color: #555;
+      background-color: white;
+      box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+      border-radius: 100rem;
+      padding: 0 2rem;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+    }
+
+    .product__back:hover,
+    .product__back:active {
+      background-color: #50a9e3;
+    }
+
+    .product__name {
+      background: linear-gradient(to bottom right, #50a9e3, #654b65);
+      padding: 1rem;
+      font-family: 'Roboto', sans-serif;
+      font-size: 4rem;
+      color: white;
+      text-align: center;
+      word-spacing: 2px;
+    }
+
+    .product__details {
+      background-color: #eee;
+      padding: 4rem 6rem;
+      font-size: 1.9rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1.5rem;
+    }
+
+    .product__description {
+      padding: 5rem 6rem;
+      font-size: 1.6rem;
+      line-height: 1.8;
+    }
+
+    .product__link:link,
+    .product__link:visited {
+      display: block;
+      background-color: #50a9e3;
+      color: white;
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+    }
+
+    .product__link:hover,
+    .product__link:active {
+      transform: scale(1.1);
+    }
+
+    .emoji-left {
+      font-size: 2rem;
+      margin-right: 1rem;
+    }
+
+    .emoji-left-mid {
+      font-size: 2rem;
+      margin-right: 1rem;
+    }
+
+    .emoji-right-mid {
+      font-size: 2rem;
+      margin-left: 1rem;
+    }
+
+    .imglogo {
+      width: 100%;
+      height: 100%;
+    }
+
+    .slider {
+      width: 100%;
+      max-width: 800px;
+      height: 350px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slide {
+      width: 100%;
+      max-width: 800px;
+      height: 350px;
+      position: absolute;
+      transition: all 0.5s;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .btn {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      padding: 10px;
+      border: none;
+      border-radius: 50%;
+      z-index: 10px;
+      cursor: pointer;
+      background-color: #fff;
+      font-size: 18px;
+    }
+
+    .btn:hover {
+      background-color: #50a9e3;
+      transform: scale(1.1);
+      transition: all 0.3s;
+    }
+
+    .btn-prev {
+      top: 45%;
+      left: 2%;
+    }
+
+    .btn-next {
+      top: 45%;
+      right: 2%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="imglogo">
+      <img style="width: 100%; height: 100%;" src="https://i.ibb.co/TtXCpRm/retroxlogo-1-removebg-preview.png"
+        alt="retroxlogo-1-removebg-preview" border="0">
+    </div>
+    <figure class="product">
+      <a href="/overview" class="product__back">
+        <span class="emoji-left">👈</span>VOLTAR
+      </a>
+      <div class="slider">
+
+        <div class="slide">
+          <img src="{%IMG1%}" alt="img1" />
+        </div>
+
+        <div class="slide">
+          <img src="{%IMG2%}" alt="img2" />
+        </div>
+        <div class="slide">
+          <img src="{%IMG3%}" alt="img3" />
+        </div>
+        <button class="btn btn-next">>
+        </button>
+        <button class="btn btn-prev">
+          < </button>
+      </div>
+      <h2 class="product__name">{%GAMENAME%}</h2>
+      <div class="product__details">
+        <p><span class="emoji-left">Plataforma:</span>{%PLATFORM%}</p>
+        <p><span class="emoji-left">Gênero:</span>{%GENRE%}</p>
+        <p><span class="emoji-left">Ano:</span>{%YEAR%}</p>
+        <p><span class="emoji-left">Idioma:</span>🇺🇸🇧🇷</p>
+      </div>
+
+      <a href="#" class="product__link">
+        <span class="emoji-left">🛒</span>
+        <span>Adicione ao Carrinho por R${%PRICE%}</span>
+        <span class="emoji-left">🛒</span>
+      </a>
+
+      <p class="product__description">
+        {%DESCRIPTION%}
+      </p>
+    </figure>
+
+  </div>
+
+  <script>"use strict";
+    // Selecionar todos os slides
+    const slides = document.querySelectorAll(".slide");
+
+    // Faz o loop e muda a visao
+    slides.forEach((slide, indx) => {
+      slide.style.transform = `translateX(${indx * 100}%)`;
+    });
+
+    // Botao de selecionar o proximo slide
+    const nextSlide = document.querySelector(".btn-next");
+
+    // Contador de img
+    let curSlide = 0;
+
+    // Número máximo de imgs 
+    let maxSlide = slides.length - 1;
+
+    // event listener 
+    nextSlide.addEventListener("click", function () {
+
+      // Checka a posição do slide
+      if (curSlide === maxSlide) {
+        curSlide = 0;
+      } else {
+        curSlide++;
+      }
+
+      //   Mode o Slide -100%
+      slides.forEach((slide, indx) => {
+        slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+      });
+    });
+
+    // Botao de selecionar o anterior
+    const prevSlide = document.querySelector(".btn-prev");
+
+    // event listener 
+    prevSlide.addEventListener("click", function () {
+      // Checka a posição do slide
+      if (curSlide === 0) {
+        curSlide = maxSlide;
+      } else {
+        curSlide--;
+      }
+
+      //    Mode o Slide +100%
+      slides.forEach((slide, indx) => {
+        slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+      });
+    });
+
+  </script>
+</body>
+
+</html>
