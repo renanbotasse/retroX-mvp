@@ -2,42 +2,28 @@ const fs = require("fs");
 const http = require("http");
 const url = require("url");
 
-// 1 - create a server and listen to a request on port 80001.
-// 2 - add minimal require (http) for the server. Revise this point every time to add more requirements.
-// 3 - start writing the server
-// 4 - We need read overview, product and card templates
-// 5 - Criar Server com tempOverview, fazer a estrutura html do tempoOverview
-// 6 - Funçao que leia a lista do data.json de informaçoes
-// 7 - http para ler os http e fs para ler os arquivos, url para poder fazer as rotas
-// 8 - fazer o req.url virar o pathName para as templates
-// !9 - diferenca readFile e readeFileSync para
-// !10 - map(el => replaceTemplate(tempCard,el))
-// 11 -  criamos um const com todas as informaçoes separadas	const cardsHtml = dataObj.map(el => replaceTemplate(tempCard, el))
-// 12 - Usamos o cosnt de cards para upar no overview
+const replaceTemplate = require('./modules/replaceTemplate');
 
+// 1 - Create a server and listen for requests on port 80001.
+// 2 - Add the minimal requirement (http) for the server. Revise this point every time to add more requirements.
+// 3 - Begin writing the server.
+// 4 - We need to read overview, product, and card templates.
+// 5 - Create a server with tempOverview and create the HTML structure for tempOverview.
+// 6 - Function that reads the list of information from data.json.
+// 7 - Use http to handle HTTP requests, fs to read files, and url to manage routes.
+// 8 - Make req.url become the pathname for the templates.
+// 9 - Understand the difference between readFile and readFileSync.
+// 10 - Apply the map function to replaceTemplate(tempCard, el).
+// 11 - Create a constant with all the separated information: const cardsHtml = dataObj.map(el => replaceTemplate(tempCard, el)).
+// 12 - Use the const cards to update the overview.
 
-// funçao replaceTemplate
-const replaceTemplate = (temp, product) => {
-	let output = temp.replace(/{%ID%}/g, product.id);
-	output = output.replace(/{%GAMENAME%}/g, product.productName);
-	output = output.replace(/{%IMG1%}/g, product.image1);
-	output = output.replace(/{%IMG2%}/g, product.image2);
-	output = output.replace(/{%IMG3%}/g, product.image3);
-	output = output.replace(/{%PLATFORM%}/g, product.platform);
-	output = output.replace(/{%GENRE%}/g, product.genre);
-	output = output.replace(/{%YEAR%}/g, product.year);
-	output = output.replace(/{%PRICE%}/g, product.price);
-	output = output.replace(/{%DESCRIPTION%}/g, product.description);
-	return output;
-}
+// function replaceTemplate was here but we move to modules folder
 
 const tempOverview = fs.readFileSync(`${__dirname}/templates/template-overview.html`, "utf8");
 const tempCard = fs.readFileSync(`${__dirname}/templates/template-card.html`, "utf8");
 const tempProduct = fs.readFileSync(`${__dirname}/templates/template-product.html`, "utf8");
 
-
-
-// Info usada para montar o site vem do data.json
+// The information used to build the website comes from the data.json file
 const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, "utf8");
 const dataObj = JSON.parse(data);
 
@@ -46,18 +32,17 @@ const server = http.createServer((req, res) => {
 
   //Overview
   if (pathname === "/" || pathname === "/overview") {
-	res.writeHead(200, { "Conten-type": "text/html" });
-	const cardsHtml = dataObj.map(el => replaceTemplate(tempCard, el)).join('');
-	const output = tempOverview.replace(/{%PRODUCT_CARDS%}/g, cardsHtml);
-	res.end(output);
+    res.writeHead(200, { "Conten-type": "text/html" });
+    const cardsHtml = dataObj.map((el) => replaceTemplate(tempCard, el)).join("");
+    const output = tempOverview.replace(/{%PRODUCT_CARDS%}/g, cardsHtml);
+    res.end(output);
 
-    
     //product
   } else if (pathname === "/product") {
-	res.writeHead(200, { "Conten-type": "text/html" });
-	const product = dataObj[query.id];
-	const output = replaceTemplate(tempProduct, product);
-	res.end(output);
+    res.writeHead(200, { "Conten-type": "text/html" });
+    const product = dataObj[query.id];
+    const output = replaceTemplate(tempProduct, product);
+    res.end(output);
 
     //api
   } else if (pathname === "/api") {
@@ -74,16 +59,6 @@ const server = http.createServer((req, res) => {
   }
 });
 
-// }
-
-//Overview
-
-// Product
-
-//API
-
-//not found
-
-server.listen(8006, "127.0.0.1", () => {
+server.listen(8000, "127.0.0.1", () => {
   console.log("Listening to request on port 8000");
 });
